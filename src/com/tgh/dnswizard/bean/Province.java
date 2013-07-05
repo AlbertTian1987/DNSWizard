@@ -8,7 +8,7 @@ import de.greenrobot.dao.DaoException;
 /**
  * Entity mapped to table PROVINCE.
  */
-public class Province {
+public class Province implements DisplayText{
 
     private Long id;
     /** Not-null value. */
@@ -166,6 +166,11 @@ public class Province {
 
     @Override
     public String toString() {
+        return text;
+    }
+
+    @Override
+    public String getDisplayText() {
         return text;
     }
 }

@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Entity mapped to table CITY.
  */
-public class City {
+public class City implements DisplayText{
 
     private Long id;
     /** Not-null value. */
@@ -169,6 +169,11 @@ public class City {
 
     @Override
     public String toString() {
+        return text;
+    }
+
+    @Override
+    public String getDisplayText() {
         return text;
     }
 }

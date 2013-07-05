@@ -7,7 +7,7 @@ import de.greenrobot.dao.DaoException;
 /**
  * Entity mapped to table DNS.
  */
-public class DNS {
+public class DNS implements DisplayText{
 
     private Long id;
     /** Not-null value. */
@@ -145,6 +145,11 @@ public class DNS {
 
     @Override
     public String toString() {
+        return text;
+    }
+
+    @Override
+    public String getDisplayText() {
         return text;
     }
 }

@@ -8,7 +8,7 @@ import de.greenrobot.dao.DaoException;
 /**
  * Entity mapped to table ISP.
  */
-public class ISP {
+public class ISP implements DisplayText{
 
     private Long id;
     /** Not-null value. */
@@ -126,6 +126,11 @@ public class ISP {
 
     @Override
     public String toString() {
+        return text;
+    }
+
+    @Override
+    public String getDisplayText() {
         return text;
     }
 }

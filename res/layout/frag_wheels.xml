@@ -6,25 +6,25 @@
               android:layout_height="match_parent">
 
     <kankan.wheel.widget.WheelView
-        android:id="@+id/ispSelector"
+        android:id="@+id/ispWheel"
         android:layout_width="60dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="7dp"/>
     <kankan.wheel.widget.WheelView
-        android:id="@+id/provinceSelector"
+        android:id="@+id/provinceWheel"
         android:layout_width="60dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="4dp"/>
     <kankan.wheel.widget.WheelView
-        android:id="@+id/citySelector"
+        android:id="@+id/cityWheel"
         android:layout_width="60dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="4dp"/>
     <kankan.wheel.widget.WheelView
-        android:id="@+id/dnsSelector"
+        android:id="@+id/dnsWheel"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"

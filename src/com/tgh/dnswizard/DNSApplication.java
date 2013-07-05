@@ -1,6 +1,8 @@
 package com.tgh.dnswizard;
 
 import android.app.Application;
+import android.content.Context;
+import android.content.SharedPreferences;
 import com.tgh.dnswizard.bean.DaoMaster;
 import com.tgh.dnswizard.bean.DaoSession;
 
@@ -35,5 +37,52 @@ public class DNSApplication extends Application {
 
     public static DaoSession getDaoSession(){
         return daoSession;
+    }
+
+    private static final String CONFIG = "DNS_Config";
+    private static final String ISP_DATA="ispData";
+    private static final String ISP_UPDATE="ispUpdate";
+
+    /**
+     * 设置ISP数据是否需要升级
+     * @param context
+     * @param update
+     */
+    public static void setISPUpdateState(Context context,boolean update) {
+        SharedPreferences.Editor edit = context.getSharedPreferences(CONFIG, Context.MODE_PRIVATE).edit();
+        edit.putBoolean(ISP_UPDATE,update);
+        edit.commit();
+    }
+
+    /**
+     * 查询ISP是否需要升级
+     * @param context
+     * @return
+     */
+    public static boolean ispNeedUpdate(Context context){
+        SharedPreferences sp=context.getSharedPreferences(CONFIG,Context.MODE_PRIVATE);
+        return sp.getBoolean(ISP_UPDATE,true);
+    }
+
+    /**
+     * 设置ISP数据是否可用
+     * @param context
+     * @param ready
+     * @return
+     */
+    public static void setISPDataReady(Context context,boolean ready){
+        SharedPreferences.Editor edit = context.getSharedPreferences(CONFIG, Context.MODE_PRIVATE).edit();
+        edit.putBoolean(ISP_DATA,ready);
+        edit.commit();
+    }
+
+    /**
+     * 查询ISP数据是否可用
+     * @param context
+     * @return
+     */
+    public static boolean ispDataIsReady(Context context){
+        SharedPreferences sp=context.getSharedPreferences(CONFIG, Context.MODE_PRIVATE);
+        return sp.getBoolean(ISP_DATA,false);
     }
 }
