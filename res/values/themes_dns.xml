@@ -2,33 +2,29 @@
 
 <!-- Generated with http://android-holo-colors.com -->
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme.Dns" parent="@style/Theme.Sherlock.Light">
 
-  <style name="dns" parent="android:Theme.Light">
+        <item name="actionBarItemBackground">@drawable/selectable_background_dns</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Dns</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Dns</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Dns</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Dns</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Dns</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_dns</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_dns</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Dns</item>
 
-    <item name="android:editTextStyle">@style/EditTextdns</item>
-
-    <item name="android:checkboxStyle">@style/CheckBoxdns</item>
-
-    <item name="android:radioButtonStyle">@style/RadioButtondns</item>
-
-    <item name="android:buttonStyle">@style/Buttondns</item>
-
-    <item name="android:imageButtonStyle">@style/ImageButtondns</item>
-
-    <item name="android:spinnerStyle">@style/Spinnerdns</item>
-
-    <item name="android:dropDownSpinnerStyle">@style/Spinnerdns.DropDown</item>
-
-    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemdns</item>
-
-    <item name="android:progressBarStyleHorizontal">@style/ProgressBardns</item>
-
-    <item name="android:listViewStyle">@style/ListViewdns</item>
-
-    <item name="android:listViewWhiteStyle">@style/ListViewdns.White</item>
-
-    <item name="android:spinnerItemStyle">@style/SpinnerItemdns</item>
-
-  </style>
-
+        <item name="android:editTextStyle">@style/EditTextdns</item>
+        <item name="android:checkboxStyle">@style/CheckBoxdns</item>
+        <item name="android:radioButtonStyle">@style/RadioButtondns</item>
+        <item name="android:buttonStyle">@style/Buttondns</item>
+        <item name="android:imageButtonStyle">@style/ImageButtondns</item>
+        <item name="android:spinnerStyle">@style/Spinnerdns</item>
+        <item name="android:dropDownSpinnerStyle">@style/Spinnerdns.DropDown</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemdns</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBardns</item>
+        <item name="android:listViewStyle">@style/ListViewdns</item>
+        <item name="android:listViewWhiteStyle">@style/ListViewdns.White</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemdns</item>
+    </style>
 </resources>
