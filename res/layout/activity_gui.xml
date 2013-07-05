@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/host"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/gui_host_hint"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/dns"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/host"
+            android:layout_alignLeft="@+id/host"
+            android:hint="@string/gui_dns_hint"/>
+        <CheckBox
+            android:id="@+id/UdpTcpSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/dns"
+            android:layout_alignRight="@id/dns"
+            android:layout_marginTop="3dp"
+            android:text="@string/gui_switch_tcp"/>
+    </RelativeLayout>
+</LinearLayout>

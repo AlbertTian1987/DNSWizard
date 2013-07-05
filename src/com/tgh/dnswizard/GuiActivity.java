@@ -10,7 +10,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
  * Time: 上午11:07
  * To change this template use File | Settings | File Templates.
  */
-public class MainActivity extends SherlockFragmentActivity {
+public class GuiActivity extends SherlockFragmentActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
