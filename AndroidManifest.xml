@@ -5,15 +5,17 @@
   <uses-sdk android:minSdkVersion="8"
             android:targetSdkVersion="16" />
 
-  <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
-    <activity android:name=".MainActivity">
+  <application android:icon="@drawable/ic_launcher" android:label="@string/app_name"
+               android:name=".DNSApplication">
+
+    <activity android:name=".GuiActivity" android:theme="@style/Theme.Dns">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-      <activity android:name=".MainActivity"/>
-  </application>
 
+    <service android:name="com.octo.android.robospice.UncachedSpiceService" android:exported="false" />
+  </application>
 </manifest>
 

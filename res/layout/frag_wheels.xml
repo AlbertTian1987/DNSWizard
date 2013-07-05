@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <kankan.wheel.widget.WheelView
+        android:id="@+id/ispSelector"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="7dp"/>
+    <kankan.wheel.widget.WheelView
+        android:id="@+id/provinceSelector"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"/>
+    <kankan.wheel.widget.WheelView
+        android:id="@+id/citySelector"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"/>
+    <kankan.wheel.widget.WheelView
+        android:id="@+id/dnsSelector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="7dp"/>
+
+</LinearLayout>

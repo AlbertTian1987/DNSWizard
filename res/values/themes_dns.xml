@@ -3,7 +3,6 @@
 <!-- Generated with http://android-holo-colors.com -->
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <style name="Theme.Dns" parent="@style/Theme.Sherlock.Light">
-
         <item name="actionBarItemBackground">@drawable/selectable_background_dns</item>
         <item name="popupMenuStyle">@style/PopupMenu.Dns</item>
         <item name="dropDownListViewStyle">@style/DropDownListView.Dns</item>
@@ -13,6 +12,7 @@
         <item name="actionModeBackground">@drawable/cab_background_top_dns</item>
         <item name="actionModeSplitBackground">@drawable/cab_background_bottom_dns</item>
         <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Dns</item>
+        <item name="android:windowFullscreen">true</item>
 
         <item name="android:editTextStyle">@style/EditTextdns</item>
         <item name="android:checkboxStyle">@style/CheckBoxdns</item>

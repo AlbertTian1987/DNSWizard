@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DNS助手</string>
+
+    <skip/>
+    <string name="gui_host_hint">请输入要解析的域名</string>
+    <string name="gui_dns_hint">DNS服务器</string>
+    <string name="gui_parse_btn">GO！</string>
+    <string name="gui_switch_tcp">TCP</string>
 </resources>

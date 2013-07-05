@@ -19,4 +19,5 @@
 
 <resources>
     <color name="pressed_dns">#CC9FCB1C</color>
+    <color name="transparent">#00000000</color>
 </resources>
