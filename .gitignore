@@ -1,0 +1,12 @@
+#for intellij
+*.iml
+*.ipr
+*.iws
+.idea/
+local.properties
+
+# Generic Android ignores
+bin/
+target
+gen/
+gen-external-apklibs/
