@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="dns" parent="android:Theme.Light">
+
+    <item name="android:editTextStyle">@style/EditTextdns</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxdns</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtondns</item>
+
+    <item name="android:buttonStyle">@style/Buttondns</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtondns</item>
+
+    <item name="android:spinnerStyle">@style/Spinnerdns</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/Spinnerdns.DropDown</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemdns</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBardns</item>
+
+    <item name="android:listViewStyle">@style/ListViewdns</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewdns.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemdns</item>
+
+  </style>
+
+</resources>
