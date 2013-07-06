@@ -99,18 +99,30 @@ public class WheelsFragment extends SherlockFragment{
     }
 
     public String getCurrentIsp(){
+        if (mIspData.isEmpty()){
+            return "";
+        }
         return mIspData.get(mLastIspPos).getDisplayText();
     }
 
     public String getCurrentProvince(){
+        if (mProvinceData.isEmpty()){
+            return "";
+        }
         return mProvinceData.get(mLastProvincePos).getDisplayText();
     }
 
     public String getCurrentCity(){
+        if (mCityData.isEmpty()){
+            return "";
+        }
         return mCityData.get(mLastCityPos).getDisplayText();
     }
 
     public String getCurrentDNS(){
+        if (mDNSData.isEmpty()){
+            return "";
+        }
         return mDNSData.get(mLastDNSPos).getDisplayText();
     }
 
@@ -144,16 +156,45 @@ public class WheelsFragment extends SherlockFragment{
     private void updateData() {
         List<ISP> isps = DNSApplication.getDaoSession().getISPDao().loadAll();
         reput(mIspData,isps);
+
+        int safePos=checkPos(isps,mLastIspPos);
+        if (safePos==-1){
+            return;
+        }
+        mLastIspPos=safePos;
         List<Province> provinces = isps.get(mLastIspPos).getProvinces();
         reput(mProvinceData,provinces);
+
+        safePos=checkPos(provinces,mLastProvincePos);
+        if (safePos==-1){
+            return;
+        }
+        mLastProvincePos=safePos;
         List<City> cities = provinces.get(mLastProvincePos).getCities();
         reput(mCityData,cities);
+
+        safePos=checkPos(cities,mLastCityPos);
+        if (safePos==-1){
+            return;
+        }
+        mLastCityPos=safePos;
         List<DNS> dnsList = cities.get(mLastCityPos).getDnsList();
         reput(mDNSData,dnsList);
     }
 
+    private int checkPos(List data,int lastPos){
+        int safePos=-1;
+        if (data.size()==0){
+            return safePos;
+        }
+        if (data.size()<=lastPos){
+            safePos=0;
+            return safePos;
+        }
+        return lastPos;
+    }
+
     private <T> void reput(List<T> container,List<T> temp){
-        Log.i(TAG,temp.toString());
         container.clear();
         container.addAll(temp);
     }
