@@ -364,6 +364,7 @@ public class WheelsFragment extends SherlockFragment{
         @Override
         public void onChanged(WheelView wheel, int oldValue, int newValue) {
             mLastDNSPos=newValue;
+            mObserver.onDnsValueChanged(getCurrentDNS());
         }
     };
 
