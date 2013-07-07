@@ -20,7 +20,19 @@
       </intent-filter>
     </activity>
 
+    <activity android:name=".ParseResultListActivity" android:theme="@style/Theme.Dns" android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="com.tgh.dns.ParseAndShowLog"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.tgh.dns.ShowLog"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+    </activity>
+
     <service android:name="com.octo.android.robospice.UncachedSpiceService" android:exported="false" />
+
   </application>
 </manifest>
 

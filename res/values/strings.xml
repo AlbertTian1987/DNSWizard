@@ -7,7 +7,7 @@
     <string name="gui_dns_hint">DNS服务器</string>
     <string name="gui_parse_btn">GO！</string>
     <string name="gui_switch_tcp">TCP</string>
-
+    <string name="gui_toast_query_not_null">查询的参数不可为空</string>
     <skip/>
     <string name="dialog_title">初始化</string>
     <string name="dialog_message">DNS数据加载中，请不要退出。\n否则应用不能正常使用。</string>
